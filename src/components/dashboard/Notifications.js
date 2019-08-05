@@ -2,8 +2,10 @@ import React from 'react'
 
 const Notifications = () => {
   return (
-    <div>
-      <p>Notifications</p>
+    <div className="card z-depth-0">
+      <div className="card-content">
+        <p>Notifications</p>
+      </div>
     </div>
   )
 }
