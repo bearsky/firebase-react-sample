@@ -6,7 +6,13 @@ const projectReducer = (state = initState, action) => {
       console.log('Prject created successfuly')
       return state
     case 'CREATE_PROJECT_ERROR':
-      console.log('There was an erroro while creating a project ::: ', action.err)
+      console.log('There was an error while creating a project ::: ', action.err)
+      return state
+    case 'REMOVE_PROJECT':
+      console.log('Project removed!')
+      return state
+    case 'REMOVE_PROJECT_ERROR':
+      console.log('There was an error while removing a project ::: ', action.err)
       return state
     default:
       return state
